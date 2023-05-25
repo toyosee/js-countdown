@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel= "stylesheet" href="assets/styles.css">
+</head>
+  <body>
+    <div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link disabled"><strong class="countit">MY COUNTER</strong></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#">Counter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Result</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title countdown-txt">Countdown Timer</h3>
+          <p class="card-text">        
+            <label for="end-date">End Date and Time:</label>
+            <input type="datetime-local" id="end-date" />
+        </p>
+          <a href="#" class="btn btn-primary" id="countIT">Start Countdown</a>
+        </div>
+        <div class="card-footer text-body-secondary" id="countdown">
+            
+          </div>        
+      </div>
+      </div>
+
+    <script src="assets/count.js"></script>
+    </body>
+</html>
