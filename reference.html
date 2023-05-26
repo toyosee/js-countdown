@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel= "stylesheet" href="assets/styles.css">
+</head>
+  <body>
+    <div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link disabled"><strong class="countit">TRANSFER FORM</strong></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="index.html">Counter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Result</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title countdown-txt">Cash Transfer Form</h3>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Account Number</span>
+            <input type="number" id="acct-number" class="form-control" aria-label="Account Number" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="text" id="sender-name" class="form-control"  aria-label="Sender's Name" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">Sender Name</span>
+          </div>
+          
+          <div class="mb-3">
+            <label for="basic-url" class="form-label">Your BVN must be accurate for processing</label>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon3">BVN</span>
+              <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            </div>
+            <div class="form-text" id="basic-addon4">Use here for customer details.</div>
+          </div>
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="sign">₦</span>
+            <input type="number" id="amount" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">Amount</span>
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="text" id="receiver" class="form-control" placeholder="Receiver's Name" aria-label="Receiver's Name">
+            <span class="input-group-text">Account Number</span>
+            <input type="number" id="receiver-account" class="form-control" aria-label="Server">
+          </div>
+          
+          <div class="input-group">
+            <span class="input-group-text">Payment Comment</span>
+            <textarea class="form-control" id="comment" aria-label="With textarea"></textarea>
+          </div>
+          <a href="#" class="btn btn-primary" id="move-it">Submit</a>
+        </div>
+        <div class="card-footer text-body-secondary" id="display">
+            
+          </div>        
+      </div>
+      </div>
+
+    <script src="assets/values.js"></script>
+    </body>
+</html>
