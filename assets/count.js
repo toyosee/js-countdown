@@ -1,6 +1,6 @@
 const endDateInput = document.getElementById("end-date");
 const countdownDiv = document.getElementById("countdown");
-Btn = document.getElementById('countIT');
+const Btn = document.getElementById('countIT');
 
 const Counter = () => {
     const endDate = endDateInput.value;
