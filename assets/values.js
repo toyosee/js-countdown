@@ -8,6 +8,7 @@ const recvAcctNumb = document.getElementById('receiver-account');
 const CommentIt = document.getElementById('comment');
 const Naira = document.getElementById('sign');
 const Display = document.getElementById('display');
+const hideDiv = document.getElementById('hide');
 const Btn = document.getElementById('move-it');
 
 // Display enteries
@@ -26,10 +27,17 @@ const DisplayEntry = () => {
                         Amount : ${naira} ${money}<br>
                         Receiver's Name : ${receiver}<br>
                         Receiver Account Number : ${recvacct}<br>
-                        Reason : ${comment}
+                        Reason : ${comment}<br>
+                        <a href="../reference.html" class="btn btn-primary btn-space">Complete Transfer</a>
                         `;
 }
 
+// Hide content form
+const Hide = () => {
+    hideDiv.style.display = "none";
+}
+
+// Clear all entries
 const Clear = () => {
     acctNumb.value = "";
     acctName.value = '';
@@ -41,5 +49,12 @@ const Clear = () => {
     CommentIt.value = '';
 }
 
-Btn.addEventListener("click", DisplayEntry);
-Btn.addEventListener("click", Clear);
+// call all working functions in the code
+const BtnClick = () => {
+    DisplayEntry();
+    Hide();
+    Clear();
+}
+
+// Handle the click event
+Btn.addEventListener("click", BtnClick);
